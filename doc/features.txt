@@ -1,0 +1,9 @@
+## IMPLEMENTED
+*
+	
+
+## FORTHCOMING/WANTED:
+* open links from detail pane
+* resizing (probably a new UX implementation)
+* understand and display ranking
+* search-term highlighting

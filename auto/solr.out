@@ -1,0 +1,63 @@
+*** [WARN] *** Your open file limit is currently 1024.  
+ It should be set to 65000 to avoid operational disruption. 
+ If you no longer wish to see this warning, set SOLR_ULIMIT_CHECKS to false in your profile or solr.in.sh
+
+ERROR: $ is not supported by this script
+
+
+Usage: solr start [-f] [-c] [-h hostname] [-p port] [-d directory] [-z zkHost] [-m memory] [-e example] [-s solr.solr.home] [-t solr.data.home] [-a "additional-options"] [-V]
+
+  -f            Start Solr in foreground; default starts Solr in the background
+                  and sends stdout / stderr to solr-PORT-console.log
+
+  -c or -cloud  Start Solr in SolrCloud mode; if -z not supplied, an embedded Zookeeper
+                  instance is started on Solr port+1000, such as 9983 if Solr is bound to 8983
+
+  -h <host>     Specify the hostname for this Solr instance
+
+  -p <port>     Specify the port to start the Solr HTTP listener on; default is 8983
+                  The specified port (SOLR_PORT) will also be used to determine the stop port
+                  STOP_PORT=($SOLR_PORT-1000) and JMX RMI listen port RMI_PORT=($SOLR_PORT+10000). 
+                  For instance, if you set -p 8985, then the STOP_PORT=7985 and RMI_PORT=18985
+
+  -d <dir>      Specify the Solr server directory; defaults to server
+
+  -z <zkHost>   Zookeeper connection string; only used when running in SolrCloud mode using -c
+                   To launch an embedded Zookeeper instance, don't pass this parameter.
+
+  -m <memory>   Sets the min (-Xms) and max (-Xmx) heap size for the JVM, such as: -m 4g
+                  results in: -Xms4g -Xmx4g; by default, this script sets the heap size to 512m
+
+  -s <dir>      Sets the solr.solr.home system property; Solr will create core directories under
+                  this directory. This allows you to run multiple Solr instances on the same host
+                  while reusing the same server directory set using the -d parameter. If set, the
+                  specified directory should contain a solr.xml file, unless solr.xml exists in Zookeeper.
+                  This parameter is ignored when running examples (-e), as the solr.solr.home depends
+                  on which example is run. The default value is server/solr. If passed relative dir,
+                  validation with current dir will be done, before trying default server/<dir>
+
+  -t <dir>      Sets the solr.data.home system property, where Solr will store data (index).
+                  If not set, Solr uses solr.solr.home for config and data.
+
+  -e <example>  Name of the example to run; available examples:
+      cloud:         SolrCloud example
+      techproducts:  Comprehensive example illustrating many of Solr's core capabilities
+      dih:           Data Import Handler
+      schemaless:    Schema-less example
+
+  -a            Additional parameters to pass to the JVM when starting Solr, such as to setup
+                  Java debug options. For example, to enable a Java debugger to attach to the Solr JVM
+                  you could pass: -a "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=18983"
+                  In most cases, you should wrap the additional parameters in double quotes.
+
+  -j            Additional parameters to pass to Jetty when starting Solr.
+                  For example, to add configuration folder that jetty should read
+                  you could pass: -j "--include-jetty-dir=/etc/jetty/custom/server/"
+                  In most cases, you should wrap the additional parameters in double quotes.
+
+  -noprompt     Don't prompt for input; accept all defaults when running examples that accept user input
+
+  -v and -q     Verbose (-v) or quiet (-q) logging. Sets default log level to DEBUG or WARN instead of INFO
+
+  -V or -verbose Verbose messages from this script
+

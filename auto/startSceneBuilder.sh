@@ -1,0 +1,1 @@
+../../runtime/jdk1.8.0_201.linux/bin/java -jar ../lib/scenebuilder-8.5.0-all.jar &> ../out/sceneBuilder.out

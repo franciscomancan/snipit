@@ -1,0 +1,21 @@
+Steps to create an collection that is manually defined (not schemaless):
+* run command './solr create -c computation'
+    => this will result in a new collection that contains all necessary files
+* immediately after run './solr config -c computation -p 9876 -property update.autoCreateFields -value false'
+    => this will turn off the auto-definition of the various fields which will happen by creating documents
+* navigate to the schema page in the solr UI (http://localhost:9876/solr/#/computation/schema), add each field individually and define the type
+    => this will result in modifications to the 'solr/server/solr/computation/conf/managed-schema' file
+* you should now be able to run the client at the collection, assuming it's configured with the 'computation' in its URL
+
+** Messed around with creating a 'copy field' to allow easier search of all fields of a given index but it turns out
+this is too expensive for performance, so don't do it (just make the queries more precise)
+____________________________________________________________________________________________________________________________________________________________________________
+Commands:
+'bin/solr create -c <yourCollection>' = creates a new index/collection with defaults
+'bin/solr create -c <yourCollection> -s 2 -rf 2' = creates a new index/collection with 2 shards and 2 replicas
+'bin/solr delete -c techproducts' = deletes the indicated index
+'bin/solr config -c computation -p 9876 -property update.autoCreateFields -value false' = turns off 'schemaless' configuration
+
+
+
+

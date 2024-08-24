@@ -1,0 +1,96 @@
+Apr 03, 2020 10:35:42 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:35:42 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:one OR fulltext:one OR title:one OR created:one* OR updated:one*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:35:49 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:35:49 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:two OR fulltext:two OR title:two OR created:two* OR updated:two*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:35:54 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:35:54 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:three OR fulltext:three OR title:three OR created:three* OR updated:three*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:35:58 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:35:58 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:four OR fulltext:four OR title:four OR created:four* OR updated:four*)
+found documents: 0 hits
+Apr 03, 2020 10:36:08 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:08 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > *:*
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:36:09 PM snippet.view.fx.Controller setDetailContents
+INFO: snipbit detail set with document: 8762ea8f-e745-424d-a2af-2a7efd8e0385
+Apr 03, 2020 10:36:30 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:30 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:one OR fulltext:one OR title:one OR created:one* OR updated:one*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:36:33 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:33 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:two OR fulltext:two OR title:two OR created:two* OR updated:two*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:36:37 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:37 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:three OR fulltext:three OR title:three OR created:three* OR updated:three*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:36:38 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:38 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:thre OR fulltext:thre OR title:thre OR created:thre* OR updated:thre*)
+found documents: 0 hits
+Apr 03, 2020 10:36:40 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:40 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:thre* OR fulltext:thre* OR title:thre* OR created:thre** OR updated:thre**)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:36:46 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:46 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:one two three OR fulltext:one two three OR title:one two three OR created:one two three* OR updated:one two three*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:36:51 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:51 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:one two three four OR fulltext:one two three four OR title:one two three four OR created:one two three four* OR updated:one two three four*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:36:58 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:36:58 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:one two OR fulltext:one two OR title:one two OR created:one two* OR updated:one two*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:37:14 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:37:14 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:two three OR fulltext:two three OR title:two three OR created:two three* OR updated:two three*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:37:18 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:37:18 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:one three OR fulltext:one three OR title:one three OR created:one three* OR updated:one three*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]
+Apr 03, 2020 10:37:21 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: Enter clicked
+Apr 03, 2020 10:37:21 PM snippet.view.fx.Controller handleSeekKeyReleased
+INFO: running query > (tag:one two OR fulltext:one two OR title:one two OR created:one two* OR updated:one two*)
+found documents: 1 hits
+[stored,indexed,tokenized<uid:8762ea8f-e745-424d-a2af-2a7efd8e0385>, stored,indexed,tokenized<citation:four>, stored,indexed,tokenized<created:20200403.2231>, stored,indexed,tokenized<fulltext:three>, stored,indexed,tokenized<tag:two>, stored,indexed,tokenized<title:one>, stored,indexed,tokenized<updated:>]

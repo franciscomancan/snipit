@@ -1,0 +1,14 @@
+solr-7.3.0/server/logs/
+solr-7.3.0/server/tmp/
+bin/
+solr-7.3.0/bin/solr*pid
+solr-7.3.0/bin/solr*port
+solr-7.3.0/server/solr/hsperfdata_afrancis
+out/
+
+/lucenestore
+/dist
+/archive
+.idea
+/solr-7.3.0
+/snipitindex

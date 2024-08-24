@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="snipbitGridPane" alignment="center" hgap="10" maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snippet.view.fx.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Accordion fx:id="snipbitAccordian" maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0">
+        <panes>
+          <TitledPane maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" text="seek">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="seekTextField" layoutX="26.0" layoutY="65.0" onKeyReleased="#handleSeekKeyReleased" prefHeight="30.0" prefWidth="500.0" />
+                        <ListView fx:id="seekResultsListView" layoutX="19.0" layoutY="178.0" onKeyReleased="#handleSeekResultsListViewKeyReleased" onMouseClicked="#handleSeekResultsListViewMouseClicked" prefHeight="510.0" prefWidth="1158.0" />
+                        <Label fx:id="seekStatus" layoutX="693.0" layoutY="30.0" prefHeight="26.0" prefWidth="405.0" text="Search ready..." />
+                        <Label fx:id="performanceLabel" layoutX="693.0" layoutY="69.0" prefHeight="26.0" prefWidth="405.0" style="-fx-font-weight: 600;" text="-" />
+                        <Label fx:id="queryLabel" layoutX="693.0" layoutY="106.0" prefHeight="26.0" prefWidth="405.0" text="-" />
+                        <Label fx:id="seekBoxLabel" layoutX="26.0" layoutY="35.0" />
+                        <Label fx:id="resultCountLabel" layoutX="26.0" layoutY="152.0" prefHeight="26.0" prefWidth="405.0" />
+                        <CheckBox layoutX="449.0" layoutY="35.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="77.0" text="Advanced" />
+                        <Label fx:id="exampleLabel" layoutX="26.0" layoutY="99.0" prefHeight="26.0" prefWidth="500.0" text="fields: title, tag, info, citation, created, updated, deleted (try &quot;tag:sql&quot;)" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane fx:id="snipbitTitledPane" expanded="false" maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" text="review">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="createdTextField" layoutX="75.0" layoutY="22.0" prefHeight="3.0" prefWidth="125.0" text="20180508" />
+                        <TextField fx:id="titleTextField" layoutX="75.0" layoutY="62.0" prefHeight="30.0" prefWidth="500.0" text="title" />
+                        <TextField fx:id="tagTextField" layoutX="75.0" layoutY="99.0" prefHeight="30.0" prefWidth="500.0" text="tags" />
+                        <TextArea fx:id="detailTextArea" layoutX="21.0" layoutY="207.0" prefHeight="490.0" prefWidth="1158.0" />
+                        <Label fx:id="snipbitStatusLabel" layoutX="700.0" layoutY="22.0" prefHeight="26.0" prefWidth="300.0" text="loading..." />
+                        <TextField fx:id="citationTextField" layoutX="75.0" layoutY="138.0" prefHeight="30.0" prefWidth="500.0" text="citation/source" />
+                        <Button fx:id="snipbitCreateCancel" layoutX="526.0" layoutY="22.0" mnemonicParsing="false" onMouseReleased="#handleSnipbitCreateCancelRelease" text="create" />
+                        <Button fx:id="editModeButton" layoutX="452.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#handleEditModeButtonClick" text="edit" />
+                        <Label layoutX="13.0" layoutY="26.0" text="created" />
+                        <Label layoutX="23.0" layoutY="66.0" text="title" />
+                        <Label layoutX="19.0" layoutY="103.0" text="tag(s)" />
+                        <Label layoutX="21.0" layoutY="186.0" text="data" />
+                        <Button fx:id="wrapTextButton" layoutX="1010.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#handleWrapTextButtonClick" text="&gt;&lt;" />
+                        <Button fx:id="nextRecordButton" accessibleHelp="advance to next snipit" accessibleText="advance to next snipit" layoutX="1145.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#handleNextRecordButtonClick" text="&gt;&gt;" />
+                        <Button fx:id="previousRecordButton" layoutX="1096.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#handlePreviousRecordButtonClick" text="&lt;&lt;" />
+                        <Button fx:id="deleteRecordButton" accessibleHelp="advance to next snipit" accessibleText="advance to next snipit" layoutX="1129.0" layoutY="54.0" mnemonicParsing="false" onMouseClicked="#handleDeleteRequestButtonClick" text="delete" />
+                        <TextField fx:id="updatedTextField" layoutX="289.0" layoutY="22.0" prefHeight="3.0" prefWidth="125.0" />
+                        <Label layoutX="223.0" layoutY="26.0" text="updated" />
+                        <Button fx:id="increaseFontTextButton" layoutX="883.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#handleIncreaseFontButtonClick" text="++" />
+                        <Button fx:id="decreaseFontTextButton" layoutX="933.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#handleDecreaseFontButtonClick" text="--" />
+                        <Button fx:id="confirmDeleteRecordButton" accessibleHelp="advance to next snipit" accessibleText="advance to next snipit" layoutX="653.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#handleDeleteButtonClick" text="CONFIRM DELETE" visible="false" />
+                        <Label layoutX="19.0" layoutY="143.0" text="cited" />
+                        <Button fx:id="cancelDeleteRecordButton" accessibleHelp="advance to next snipit" accessibleText="advance to next snipit" layoutX="1081.0" layoutY="108.0" mnemonicParsing="false" onMouseClicked="#handleCancelDeleteButtonClick" text="cancel deletion" visible="false" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane expanded="false" maxHeight="800.0" maxWidth="1200.0" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" text="configuration">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField disable="true" layoutX="43.0" layoutY="117.0" prefHeight="31.0" prefWidth="1127.0" text="http://localhost:9876/solr" />
+                        <ComboBox fx:id="collectionComboBox" disable="true" layoutX="195.0" layoutY="222.0" onAction="#handleCollectionComboBoxEvent" prefHeight="26.0" prefWidth="320.0" promptText="(select)" />
+                        <Label layoutX="195.0" layoutY="184.0" text="Current Collection" />
+                        <RadioButton disable="true" layoutX="30.0" layoutY="67.0" mnemonicParsing="false" text="Solr Endpoint as active datasource" />
+                        <RadioButton layoutX="30.0" layoutY="318.0" mnemonicParsing="false" text="Lucene index as active datasoource" />
+                        <TextField fx:id="luceneIndexDirectoryTextField" layoutX="36.0" layoutY="368.0" prefHeight="31.0" prefWidth="1127.0" text="http://localhost:9876/solr" />
+                        <Button fx:id="indexSelectionButton" layoutX="195.0" layoutY="433.0" mnemonicParsing="false" onMouseClicked="#handleIndexSelectionButtonMouseClicked" text="Select directory" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</GridPane>
